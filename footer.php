@@ -12,9 +12,9 @@
                             <p><i class="fa fa-map-marker-alt mr-2"></i><a href="contact.php" class="text-decoration-none">10B Al-Muteena, Deira Dubai, UAE</a></p>
                             <div class="d-flex justify-content-start mt-4">
                                 <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social mr-2" href="https://www.facebook.com/shiftingexpert.ae"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/shiftingexpert.uae"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="col-md-6 mb-5">

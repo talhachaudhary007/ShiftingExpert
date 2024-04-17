@@ -29,31 +29,7 @@ include "header.php";
 
             <div class="col-md-4 mb-3">
                 <div class="card blog-card">
-                  <img class="card-img-top" src="img/blogcard/blog18.jpg" alt="Card image cap">
-                  <div class="blog-card-overlay"></div>
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Corporate Moves Made Simple</h5>
-                    <p class="card-text flex-grow-1">Embarking on a new corporate journey? Let Shifting Expert be your trusted partner in making office moves stress-free and efficient.</p>
-                    <a href="corporaterelocation.php" class="btn btn-primary blog-read-more-btn">Read More</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 mb-3">
-                <div class="card blog-card">
-                  <img class="card-img-top" src="img/blogcard/blog11.jpg" alt="Card image cap">
-                  <div class="blog-card-overlay"></div>
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Effortless Moves in Ajman</h5>
-                    <p class="card-text flex-grow-1">Rely on Ajman's reliable movers and packers for a smooth relocation experience. With our efficient services.</p>
-                    <a href="ajman.php" class="btn btn-primary blog-read-more-btn">Read More</a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-3">
-                <div class="card blog-card">
-                  <img class="card-img-top" src="img/blogcard/blog12.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="img/blogcard/blog1.png" alt="Card image cap">
                   <div class="blog-card-overlay"></div>
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Movers and Packers in Sharjah</h5>
@@ -65,12 +41,36 @@ include "header.php";
 
               <div class="col-md-4 mb-3">
                 <div class="card blog-card">
-                  <img class="card-img-top" src="img/blogcard/blog13.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="img/blogcard/blog2.jpg" alt="Card image cap">
                   <div class="blog-card-overlay"></div>
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Relocating to Ras al Khaimah? </h5>
-                    <p class="card-text flex-grow-1">Make Your Move to Ras al Khaimah a Breeze with Professional Movers and Packers Services.Make your move with us.</p>
-                    <a href="rasalkhaimah.php" class="btn btn-primary blog-read-more-btn">Read More</a>
+                    <h5 class="card-title">Your Trusted Packing Services</h5>
+                    <p class="card-text flex-grow-1"> Simplify your move with Shifting Expert's stress-free services in Dubai. From personalized solutions to affordable pricing.</p>
+                    <a href="packingservices.php" class="btn btn-primary blog-read-more-btn">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mb-3">
+                <div class="card blog-card">
+                  <img class="card-img-top" src="img/blogcard/blog3.jpg" alt="Card image cap">
+                  <div class="blog-card-overlay"></div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Your Secure Solution in Dubai</h5>
+                    <p class="card-text flex-grow-1">Discover Dubai's premier storage facility at Shifting Expert. With the UAE's largest storage space, 24-hour CCTV security.</p>
+                    <a href="dubai.php" class="btn btn-primary blog-read-more-btn">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card blog-card">
+                  <img class="card-img-top" src="img/blogcard/blog6.jpg" alt="Card image cap">
+                  <div class="blog-card-overlay"></div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Service Company in Abu Dhabi</h5>
+                    <p class="card-text flex-grow-1">Seeking reliable movers and packers in Abu Dhabi? Discover a seamless transition with expert packing, and timely delivery.</p>
+                    <a href="abudhabi.php" class="btn btn-primary blog-read-more-btn">Read More</a>
                   </div>
                 </div>
               </div>
@@ -80,57 +80,57 @@ include "header.php";
                   <img class="card-img-top" src="img/blogcard/blog29.png" alt="Card image cap">
                   <div class="blog-card-overlay"></div>
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Movers and Packers in Sharjah</h5>
-                    <p class="card-text flex-grow-1">Are you looking for a MOVERS AND PACKERS SERVICE COMPANY In SHARJAH? So, here is the complete information about your search.</p>
-                    <a href="sharjah.php" class="btn btn-primary blog-read-more-btn">Read More</a>
+                    <h5 class="card-title">House Moving Solutions in Dubai</h5>
+                    <p class="card-text flex-grow-1">Experience stress-free relocation with Shifting Expert, your trusted movers and packers in Dubai. With over 25 years of expertise.</p>
+                    <a href="housemoving.php" class="btn btn-primary blog-read-more-btn">Read More</a>
                   </div>
                 </div>
               </div>
 
               <div class="col-md-4 mb-3">
                 <div class="card blog-card">
-                  <img class="card-img-top" src="img/blogcard/blog15.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="img/blogcard/blog23.jpg" alt="Card image cap">
                   <div class="blog-card-overlay"></div>
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Sharjah Reliable Movers</h5>
-                    <p class="card-text flex-grow-1">Are you looking for a MOVERS AND PACKERS SERVICE COMPANY In SHARJAH? So, here is the complete information about your search.</p>
-                    <a href="sharjah.php" class="btn btn-primary blog-read-more-btn">Read More</a>
+                    <h5 class="card-title">Looking for Villa Movers in UAE</h5>
+                    <p class="card-text flex-grow-1">We offering expert packing, efficient logistics, and competitive pricing. Trust Shifting Expert for a stress-free relocation experience.</p>
+                    <a href="villamoving.php" class="btn btn-primary blog-read-more-btn">Read More</a>
                   </div>
                 </div>
               </div>
 
               <div class="col-md-4 mb-3">
                 <div class="card blog-card">
-                  <img class="card-img-top" src="img/blogcard/blog16.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="img/blogcard/blog7.jpg" alt="Card image cap">
                   <div class="blog-card-overlay"></div>
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Movers and Packers in Sharjah</h5>
-                    <p class="card-text flex-grow-1">Are you looking for a MOVERS AND PACKERS SERVICE COMPANY In SHARJAH? So, here is the complete information about your search.</p>
-                    <a href="sharjah.php" class="btn btn-primary blog-read-more-btn">Read More</a>
+                    <h5 class="card-title"> Residential Moves with us</h5>
+                    <p class="card-text flex-grow-1">Our friendly team turns the moving process into a fun adventure, offering expert packing, careful loading and unloading.</p>
+                    <a href="residentialmoving.php" class="btn btn-primary blog-read-more-btn">Read More</a>
                   </div>
                 </div>
               </div>
 
               <div class="col-md-4 mb-3">
                 <div class="card blog-card">
-                  <img class="card-img-top" src="img/blogcard/blog17.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="img/blogcard/blog8.jpg" alt="Card image cap">
                   <div class="blog-card-overlay"></div>
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Fujairah's Reliable Movers</h5>
-                    <p class="card-text flex-grow-1">Fujairah's Top-notch Movers and Packers. Making Your Relocation Effortless  relocation to Fujairah with us.</p>
-                    <a href="fujairah.php" class="btn btn-primary blog-read-more-btn">Read More</a>
+                    <h5 class="card-title">Commercial Moves Shifting Experts</h5>
+                    <p class="card-text flex-grow-1">Planning a commercial move in Dubai? Let Shifting Experts take the hassle out of relocation. Just contact us.</p>
+                    <a href="commercialmoving.php" class="btn btn-primary blog-read-more-btn">Read More</a>
                   </div>
                 </div>
               </div>
 
               <div class="col-md-4 mb-3">
                 <div class="card blog-card">
-                  <img class="card-img-top" src="img/blogcard/blog28.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="img/blogcard/blog4.jpg" alt="Card image cap">
                   <div class="blog-card-overlay"></div>
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Movers and Packers in Sharjah</h5>
-                    <p class="card-text flex-grow-1">Are you looking for a MOVERS AND PACKERS SERVICE COMPANY In SHARJAH? So, here is the complete information about your search.</p>
-                    <a href="sharjah.php" class="btn btn-primary blog-read-more-btn">Read More</a>
+                    <h5 class="card-title">Worry about office relocation</h5>
+                    <p class="card-text flex-grow-1">Planning an office move in Dubai? Shifting Expert has your back! Follow our simple tips, relocation and being aware of building rules.</p>
+                    <a href="officerelocation.php" class="btn btn-primary blog-read-more-btn">Read More</a>
                   </div>
                 </div>
               </div>

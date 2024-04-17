@@ -71,7 +71,7 @@
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="">
+                    <a class="text-white px-2" href="https://www.facebook.com/shiftingexpert.ae">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                     <a class="text-white px-2" href="">
@@ -80,7 +80,7 @@
                     <a class="text-white px-2" href="">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a class="text-white px-2" href="">
+                    <a class="text-white px-2" href="https://www.instagram.com/shiftingexpert.uae/">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a class="text-white pl-2" href="">
@@ -105,8 +105,19 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
-                    <a href="index.php" class="nav-item nav-link active">Home</a>
-                    <a href="about.php" class="nav-item nav-link">About</a>
+
+          <!-- clicked page will be active using php -->
+            <?php 
+                $ScriptName = $_SERVER['REQUEST_URI'];
+                $ScriptName = explode('/', $ScriptName);
+                $PageName = end($ScriptName);
+                $PageName = explode('?', $PageName);
+                $PageName = current($PageName);
+            ?>
+
+
+                    <a href="index.php" class="<?php if($PageName == 'index.php'){echo 'active';}?> nav-item nav-link">Home</a>
+                    <a href="about.php" class="<?php if($PageName == 'about.php'){echo 'active';}?> nav-item nav-link">About</a>
                     <div class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
                         <div class="dropdown-menu rounded-0 m-0">
@@ -125,7 +136,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Areas</a>
+                        <a href="#" class="<?php if(($PageName == 'dubai.php') OR ($PageName == 'abudhabi.php') OR ($PageName == 'sharjah.php') OR ($PageName == 'ajman.php') OR ($PageName == 'rasalkhaimah.php') OR ($PageName == 'fujairah.php') OR ($PageName == 'alain.php') OR ($PageName == 'khorfakkan.php') OR ($PageName == 'ummalquwain.php')){echo 'active';}?> nav-link dropdown-toggle" data-toggle="dropdown">Areas</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="dubai.php" class="dropdown-item">Dubai</a>
                             <a href="abudhabi.php" class="dropdown-item">Abu Dhabi</a>
@@ -138,9 +149,9 @@
                             <a href="ummalquwain.php" class="dropdown-item">Umm Al Quwain</a>
                         </div>
                     </div>
-                    <a href="blog1.php" class="nav-item nav-link">Blog</a>
-                    <a href="faq.php" class="nav-item nav-link">FAQs</a>
-                    <a href="contact.php" class="nav-item nav-link">Contact</a>
+                    <a href="blog1.php" class="<?php if($PageName == 'blog1.php'){echo 'active';}?> nav-item nav-link">Blog</a>
+                    <a href="faq.php" class="<?php if($PageName == 'faq.php'){echo 'active';}?> nav-item nav-link">FAQs</a>
+                    <a href="contact.php" class="<?php if($PageName == 'contact.php'){echo 'active';}?> nav-item nav-link">Contact</a>
                 </div>
                 <a href="#getquote-modal" data-toggle="modal" class="btn btn-primary py-2 px-4 d-none d-lg-block">Get A Quote</a>
             </div>
@@ -165,25 +176,25 @@
 
     <!-- Ajax Code Start -->
 
-        <script>
-jQuery(document).ready(function($){
-$("#HeaderQuote").submit(function(e) {
-	$("#HeaderQuote button").text('Sending Request....');
-	e.preventDefault();
-		$.ajax( {
-			url: "quote.php",
-			method: "post",
-			data: $("#HeaderQuote").serialize(),
-			dataType: "html",
-			success: function(respond) {
-                $("#success").html(respond);
-                $("#HeaderQuote button").text('Send Message');
-                $("#HeaderQuote")[0].reset();
-            }
-        });
-    });
-});
- </script>
+            <script>
+                jQuery(document).ready(function($){
+                $("#HeaderQuote").submit(function(e) {
+                    $("#HeaderQuote button").text('Sending Request....');
+                    e.preventDefault();
+                        $.ajax( {
+                            url: "quote.php",
+                            method: "post",
+                            data: $("#HeaderQuote").serialize(),
+                            dataType: "html",
+                            success: function(respond) {
+                                $("#success").html(respond);
+                                $("#HeaderQuote button").text('Send Message');
+                                $("#HeaderQuote")[0].reset();
+                            }
+                        });
+                    });
+                });
+            </script>
 
     <!-- Ajax Code end -->
 
@@ -228,6 +239,3 @@ $("#HeaderQuote").submit(function(e) {
   </div>
 
 
-<style>
-
-</style>

@@ -46,8 +46,8 @@ $("#ContactForm").submit(function(e) {
 			method: "post",
 			data: $("#ContactForm").serialize(),
 			dataType: "html",
-			success: function(resp) {
-                $("#success").html(resp);
+			success: function(respond) {
+                $("#Mail-Success").html(respond);
                 $("#ContactForm button").text('Send Message');
                 $("#ContactForm")[0].reset();
             }
@@ -57,7 +57,7 @@ $("#ContactForm").submit(function(e) {
  </script>
 <!-- Ajax code end  -->
 
-                        <div id="success"></div>
+                        <div id="Mail-Success"></div>
                         <form name="" id="ContactForm" novalidate="novalidate">
                             <div class="control-group">
                                 <input type="text" name="username" class="form-control border-0 p-4" id="name" placeholder="Your Name"

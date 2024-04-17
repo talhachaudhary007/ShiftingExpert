@@ -3,38 +3,40 @@
    $username = $_POST['username'];
    $subject = $_POST['usersubject'];
    $body = $_POST['userbody'];
-   $admin = 'aljanatmart@gmail.com'; // Email address of the receiver
+   $admin = 'shiftingexpert.ae@gmail.com'; // Email address for receiver
    
    //Recieving >> mail-to-Admin 
 
-   $mybody = "<p>Hi Admin, <br> 
-   Mr./Mrs. $username has sent a query. Kindly check the details below.<br>
+   $mybody = "<p>
+   Subject: $subject<br>
+   Hi Admin, <br> <br>
+   Mr./Mrs. $username has sent you a query. Kindly check the details below.<br>
+   Message : $body <br> Thanks! <br> <br>
    Sender Name: $username<br>
    Email : $user <br>
-   Subject: $subject<br>
-   Message : $body<br>
    </p>";
 
   // Confiramtion >> mail-to-user
 
-  $confirm_msg = "<p>Hi $username, <br> 
-  Thank you for reaching out to us. We have received your email, and our team is currently reviewing your message. We appreciate your patience.<br>
-  Sender Name: <a href='shiftingexpert.ae'>Shifting Experts</a> <br>
-  Email : $admin <br>
-  Subject: $subject<br>
+  $confirm_msg = "<p>
+  Subject: $subject <br>
+  Hi $username, <br> <br>
+  Thank you for reaching out to Shifting Experts. We have received your email, and our team is currently reviewing your message. We'll get back to you as soon as possible. We appreciate your patience. <br> Thanks! <br> <br>
+  Admin: <a href='shiftingexpert.ae'>Shifting Experts</a> <br>
+  E-mail : $admin <br>
   </p>";
 
    // Additional headers for HTML email
    $headers = "MIME-Version: 1.0" . "\r\n";
    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-   $headers .= "From: ShiftingExpert <aljanatmart@gmail.com>\r\n";
+   $headers .= "From: ShiftingExpert <info@shiftingexpert.ae>\r\n";
 
    // mail query
 
-   $mail_sent = mail($admin, $subject, $mybody, $headers);
-  $mailtouser = mail($user, $subject, $confirm_msg, $headers);
+   $mail_to_admin = mail($admin, $subject, $mybody, $headers);
+  $mail_to_user = mail($user, $subject, $confirm_msg, $headers);
 
-   if($mail_sent){
+   if($mail_to_admin){
      echo '<div class="alert alert-success">Email has been sent</div>';
       
    } else {
