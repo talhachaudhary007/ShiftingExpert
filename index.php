@@ -109,23 +109,23 @@ $("#IndexForm").submit(function(e) {
                                             <input type="email" name="email" required class="form-control" placeholder="Email">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="movefrom" class="form-control" placeholder="Moving From">
+                                            <input type="text" name="movefrom" required class="form-control" placeholder="Moving From">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input type="date" name="date" class="form-control" placeholder="">
+                                            <input type="date" name="date" required class="form-control" placeholder="">
                                         </div>
                                         <div class="form-group">
                                             <input type="tel" name="phone" required class="form-control" placeholder="Phone">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="moveto" class="form-control" placeholder="Moving To">
+                                            <input type="text" name="moveto" required class="form-control" placeholder="Moving To">
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" name="message" placeholder="Enter complete details..." id=""
+                                            <textarea class="form-control" name="message" required placeholder="Enter complete details..." id=""
                                                 rows="6"></textarea>
                                         </div>
                                     </div>

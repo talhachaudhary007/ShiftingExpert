@@ -119,7 +119,8 @@
                     <a href="index.php" class="<?php if($PageName == 'index.php'){echo 'active';}?> nav-item nav-link">Home</a>
                     <a href="about.php" class="<?php if($PageName == 'about.php'){echo 'active';}?> nav-item nav-link">About</a>
                     <div class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                        <!-- <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a> -->
+                        <a href="#" class="<?php if(($PageName == 'packingservices.php') OR ($PageName == 'storageservices.php') OR ($PageName == 'housemoving.php') OR ($PageName == 'villamoving.php') OR ($PageName == 'residentialmoving.php') OR ($PageName == 'commercialmoving.php') OR ($PageName == 'officerelocation.php') OR ($PageName == 'corporaterelocation.php') OR ($PageName == 'apartmentmoving.php') OR ($PageName == 'furnituremoving.php') OR ($PageName == 'equipmentmoving.php') OR ($PageName == 'cheapmovers.php')){echo 'active';}?> nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="packingservices.php" class="dropdown-item">Packing Services</a>
                             <a href="storageservices.php" class="dropdown-item">Storage Services</a>
@@ -210,23 +211,23 @@
                             <input type="email" name="email" required class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="movefrom" class="form-control" placeholder="Moving From">
+                            <input type="text" name="movefrom" required class="form-control" placeholder="Moving From">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <input type="date" name="date" class="form-control" placeholder="">
+                            <input type="date" name="date" required class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                        <input type="tel" required name="phone" class="form-control" placeholder="Phone">
+                        <input type="tel" name="phone" required class="form-control" placeholder="Phone">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="moveto" class="form-control" placeholder="Moving To">
+                            <input type="text" name="moveto" required class="form-control" placeholder="Moving To">
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group" >
-                            <textarea class="form-control" name="message" placeholder="Enter complete details..." id="" rows="5"></textarea>
+                            <textarea class="form-control" name="message" required placeholder="Enter complete details..." id="" rows="5"></textarea>
                         </div>
                     </div>
                     <button style="margin: auto;" name="index_form" class="btn btn-primary quote-btn mt-3 mb-2">Get free Quote</button>

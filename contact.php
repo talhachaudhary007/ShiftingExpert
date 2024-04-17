@@ -35,49 +35,60 @@
                     <h1 class="mb-4">Contact For Any Queries</h1>
                     <div class="contact-form bg-secondary" style="padding: 30px;">
 
-<!-- Ajax code start                     -->
-<script>
-jQuery(document).ready(function($){
-$("#ContactForm").submit(function(e) {
-	$("#ContactForm button").text('Sending Request....');
-	e.preventDefault();
-		$.ajax( {
-			url: "contactmail.php",
-			method: "post",
-			data: $("#ContactForm").serialize(),
-			dataType: "html",
-			success: function(respond) {
-                $("#Mail-Success").html(respond);
-                $("#ContactForm button").text('Send Message');
-                $("#ContactForm")[0].reset();
+<!-- Ajax code start -->
+        <script>
+$(document).ready(function() {
+    $("#ContactForm").submit(function(e) {
+        e.preventDefault();
+        
+        // Custom validation
+        var isValid = true;
+        $(this).find("[required]").each(function() {
+            if ($(this).val() == "") {
+                isValid = false;
+                $(this).next(".help-block").text("This field is required.");
+            } else {
+                $(this).next(".help-block").text("");
             }
         });
+        
+        if (isValid) {
+            // Proceed with AJAX submission
+            $("#ContactForm button").text('Sending Request....');
+            $.ajax({
+                url: "contactmail.php",
+                method: "post",
+                data: $(this).serialize(),
+                dataType: "html",
+                success: function(respond) {
+                    $("#Mail-Success").html(respond);
+                    $("#ContactForm button").text('Send Message');
+                    $("#ContactForm")[0].reset();
+                }
+            });
+        }
     });
 });
- </script>
+
+        </script>
 <!-- Ajax code end  -->
 
                         <div id="Mail-Success"></div>
                         <form name="" id="ContactForm" novalidate="novalidate">
                             <div class="control-group">
-                                <input type="text" name="username" class="form-control border-0 p-4" id="name" placeholder="Your Name"
-                                    required="required"  data-validation-required-message="Please enter your name" />
+                                <input type="text" name="username" required class="form-control border-0 p-4" id="name" placeholder="Your Name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" name="useremail" class="form-control border-0 p-4" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
+                                <input type="email" name="useremail" required class="form-control border-0 p-4" id="email" placeholder="Your Email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" name="usersubject" class="form-control border-0 p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" name="usersubject" required class="form-control border-0 p-4" id="subject" placeholder="Subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control border-0 py-3 px-4" name="userbody" rows="3" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                <textarea class="form-control border-0 py-3 px-4" name="userbody" required rows="3" id="message" placeholder="Message" ></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
